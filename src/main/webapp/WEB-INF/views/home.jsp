@@ -14,13 +14,31 @@
         <script  type="text/javascript" src="<%=request.getContextPath()%>resources/bootstrap-3.2.0-dist/js/bootstrap.js" ></script>
     </head>
     <body>
-
-        <div class="row center-block">   
+        
+        <div class="tabbable">
+            <ul class=" nav  navbar-inverse navbar-left  nav-pills">
+                <li ><a href="#s1" data-toggle="tab"> one </a>  </li>
+                <li class="active"><a href="#s2" data-toggle="tab"> two </a>  </li>
+                <li ><a href="#s3" data-toggle="tab"> three </a>  </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="s1"><p>one</p></div>
+                <div class="tab-pane active" id="s2"><p>two</p></div>
+                <div class="tab-pane" id="s3"><p>three</p></div>
+            </div>
             
+            
+        </div> <!-- end tabbable-->
+        
+        
+        
+
+<!--        <div class="row center-block">   
+
             <div class="  col-xs-1 col-md-1"></div>
-           
+
             <div class=" col-xs-8 col-md-8">
-                
+
                 <form id="form" class="form-control-static">
                     <table class="table table-bordered table-striped table-hover ">
                         <tbody>
@@ -36,12 +54,36 @@
                         <input type="button"  id="bDelete" class="btn-info btn-lg" disabled="disabled" value="Delete selected">
                     </div>
                 </form>
+
+            </div>
+        </div>-->
+        
+        
+        
+        
+      <!--button for modal-->
+        <a class="btn btn-lg btn-success"
+           href="#" data-toggle="modal"
+           data-target="#basicModal">Открыть модальное окно</a>
+       
+        
+        
+        <!--MODAL-->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
+                        <h4 class="modal-title" id="myModalLabel">Название модального окна</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Содержимое модального окна</h3>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                        <button class="btn btn-primary" type="button">Сохранить изменения</button></div>
+                </div>
             </div>
         </div>
-        <div id="modal" class="modal">
-            <div class="modal-header"> ку </div>
-            <div class="modal-body"> ку </div>
-            
-        </div>
+
+
     </body>
 </html>
