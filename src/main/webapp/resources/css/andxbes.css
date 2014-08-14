@@ -1,3 +1,13 @@
-form{
-    text-align: center;
+.divBody {
+  border-style: outset outset outset solid;
+  border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 0, 0) rgb(0, 128, 255);
+  border-width: 1px 1px 1px 10px;
+  height: 25em;
+}
+.mfdiv{
+  position: relative;
+  
+  alignment-baseline: central;
+  bottom: 0;
+  background: red;
 }

@@ -11,63 +11,62 @@
         <!--<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>resources/bootstrap-3.2.0-dist/css/bootstrap.min.css" >-->
         <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>resources/bootstrap-3.2.0-dist/css/bootstrap.css" >
         <script  type="text/javascript" src="<%=request.getContextPath()%>resources/js/as.js" ></script>
+         <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>resources/css/andxbes.css" >
         <script  type="text/javascript" src="<%=request.getContextPath()%>resources/bootstrap-3.2.0-dist/js/bootstrap.js" ></script>
     </head>
     <body>
-        
+
         <div class="tabbable">
-            <ul class=" nav  navbar-inverse navbar-left  nav-pills">
+            <ul class=" nav  navbar-text ">
                 <li ><a href="#s1" data-toggle="tab"> one </a>  </li>
                 <li class="active"><a href="#s2" data-toggle="tab"> two </a>  </li>
                 <li ><a href="#s3" data-toggle="tab"> three </a>  </li>
             </ul>
-            <div class="tab-content">
-                <div class="tab-pane" id="s1"><p>one</p></div>
-                <div class="tab-pane active" id="s2"><p>two</p></div>
-                <div class="tab-pane" id="s3"><p>three</p></div>
-            </div>
-            
-            
-        </div> <!-- end tabbable-->
-        
-        
-        
+            <div >
+                <div class="row center-block">   
 
-<!--        <div class="row center-block">   
+                    <!--<div class="  col-xs-1 col-md-1"></div>-->
 
-            <div class="  col-xs-1 col-md-1"></div>
+                    <div class=" col-xs-8 col-md-8 divBody">
 
-            <div class=" col-xs-8 col-md-8">
 
-                <form id="form" class="form-control-static">
-                    <table class="table table-bordered table-striped table-hover ">
-                        <tbody>
-                            <tr class="warning"> <td >1</td> <td>2</td></tr>
-                            <tr class="info"> <td>1</td> <td>2</td></tr>
-                            <tr> <td>1</td> <td>2</td></tr>
-                            <tr> <td>1</td> <td>2</td></tr>
-                            <tr> <td>1</td> <td>2</td></tr>
-                        </tbody>
-                    </table>
-                    <div id="buttons" class="row center-block">  
-                        <input type="button" id="bAdd" class="btn-info btn-lg" value="Add new <переменная>">
-                        <input type="button"  id="bDelete" class="btn-info btn-lg" disabled="disabled" value="Delete selected">
+                        <table class="table table-bordered table-striped table-hover ">
+                            <tbody>
+                                <!--test-->
+                                <tr> <td >1</td> <td>2</td></tr>
+                                <tr> <td>1</td> <td>2</td></tr>
+                                <tr> <td>1</td> <td>2</td></tr>
+                                <tr> <td>1</td> <td>2</td></tr>
+                                <tr> <td>1</td> <td>2</td></tr>
+                                <!--/test-->
+                            </tbody>
+                        </table>
+                        <div id="buttons" class="row center-block mfdiv">  
+                            <input type="button" id="bAdd" class="btn-info btn-lg" value="Add new <переменная>">
+                            <input type="button"  id="bDelete" class="btn-info btn-lg" disabled="disabled" value="Delete selected">
+                        </div>
                     </div>
-                </form>
-
+                </div>
             </div>
-        </div>-->
-        
-        
-        
-        
-      <!--button for modal-->
+
+
+        </div> <!-- end tabbable-->
+
+
+
+
+
+
+
+
+
+        <!--button for modal-->
         <a class="btn btn-lg btn-success"
            href="#" data-toggle="modal"
            data-target="#basicModal">Открыть модальное окно</a>
-       
-        
-        
+
+
+
         <!--MODAL-->
         <div class="modal fade" id="basicModal" tabindex="-1" role="dialog">
             <div class="modal-dialog">
@@ -76,9 +75,13 @@
                         <h4 class="modal-title" id="myModalLabel">Название модального окна</h4>
                     </div>
                     <div class="modal-body">
-                        <h3>Содержимое модального окна</h3>
+                        <h3 id="info">Содержимое модального окна<br>
+                        
+                        
+                        </h3>
                     </div>
-                    <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
                         <button class="btn btn-primary" type="button">Сохранить изменения</button></div>
                 </div>
             </div>
